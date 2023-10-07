@@ -11,11 +11,7 @@
 |  Data Relationships | Established using foreign keys and joins   |   May use references or embedded data, optimized for denormalized structures  |
 |  Scaling |  Primarily vertical scaling  |   Horizontal scaling (sharding) for distribution across servers  |
 | Use Cases  |  Structured data, complex queries, data integrity is critical  |   Flexible and scalable for unstructured or semi-structured data, less emphasis on data integrity  |
-|   |    |     |
-|   |    |     |
-|   |    |     |
-|   |    |     |
-|   |    |     |
+
 
 ## MongoSH commands
 **help**	Displays help information.\
