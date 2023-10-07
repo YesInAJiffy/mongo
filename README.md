@@ -15,7 +15,7 @@
 # Non Relational DB Types
 
 | Type    | Examples | 
-| :-------- | :------- |
+| -------- | ------- |
 | Document Stores  | MongoDB, Couchbase, CouchDB   |
 | Key-Value Stores  |   Redis, Amazon DynamoDB, Riak |
 | Column-Family Stores  |  Apache Cassandra, HBase, ScyllaDB  |
