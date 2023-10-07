@@ -97,6 +97,12 @@ db.myCollection.createIndex({ email: 1 })
 db.myCollection.createIndex({ name: 1, age: -1 })
 
 ```
+**Schema of a Collection**
+```js
+var col=db.userAccount.findOne();
+for (var c in col) { print (c) ; }
+```
+
 ***load("myScript.js")*** Running JavaScript file
 **exit**	Exits the mongosh shell.
 
@@ -106,9 +112,7 @@ db.myCollection.createIndex({ name: 1, age: -1 })
 
 
 
-```js
 
-```
 ```js
 
 ```
