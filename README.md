@@ -1,4 +1,4 @@
-![image](https://github.com/YesInAJiffy/mongo/assets/121309018/8122086a-3c30-4b20-8b41-1c2954c22563)## Command	Description
+## Command	Description
 **help**	Displays help information.\
 **show dbs**	Lists all available databases.\
 **use <database>**	Switches to the specified database.\
