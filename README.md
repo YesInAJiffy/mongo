@@ -33,7 +33,7 @@
 **show dbs**	Lists all available databases.\
 **use <database>**	Switches to the specified database.\
 **show collections**	Lists all collections in the current database.\
-**db.collection.find(<query>)**	Retrieves documents from a collection based on a query.\
+**db.collection.find(<query>)**	Retrieves documents from a collection based on a query.
 ```js
 // Find all documents in the 'myCollection' collection
 db.myCollection.find()
@@ -42,7 +42,7 @@ db.myCollection.find()
 db.myCollection.find({ age: { $gt: 25 } })
 
 ```
-**db.collection.insertOne(<document>)**	Inserts a single document into a collection.\
+**db.collection.insertOne(<document>)**	Inserts a single document into a collection.
 ```js
 db.myCollection.insertOne({
     name: "John",
@@ -53,7 +53,7 @@ db.myCollection.insertOne({
 
 **db.collection.insertMany([<documents>])**	Inserts multiple documents into a collection.\
 **db.collection.updateOne(<filter>, <update>)**	Updates a single document that matches the filter.\
-**db.collection.updateMany(<filter>, <update>)**	Updates multiple documents that match the filter.\
+**db.collection.updateMany(<filter>, <update>)**	Updates multiple documents that match the filter.
 ```js
 // Update a single document
 db.myCollection.updateOne(
@@ -69,7 +69,7 @@ db.myCollection.updateMany(
 
 ```
 **db.collection.deleteOne(<filter>)**	Deletes a single document that matches the filter.\
-**db.collection.deleteMany(<filter>)**	Deletes multiple documents that match the filter.\
+**db.collection.deleteMany(<filter>)**	Deletes multiple documents that match the filter.
 ```js
 // Delete a single document
 db.myCollection.deleteOne({ name: "John" })
@@ -78,7 +78,7 @@ db.myCollection.deleteOne({ name: "John" })
 db.myCollection.deleteMany({ age: { $gt: 60 } })
 
 ```
-**db.collection.aggregate([<pipeline>])**	Performs aggregation operations on documents in a collection.\
+**db.collection.aggregate([<pipeline>])**	Performs aggregation operations on documents in a collection.
 ```js
 // Aggregation example: Calculate the average age of users
 db.myCollection.aggregate([
@@ -88,7 +88,7 @@ db.myCollection.aggregate([
 ```
 **db.collection.createIndex(<keys>, <options>)**	Creates an index on specified keys in a collection.\
 **db.collection.getIndexes()**	Lists all indexes for a collection.\
-**db.collection.dropIndex(<indexName>)**	Deletes an index from a collection.\
+**db.collection.dropIndex(<indexName>)**	Deletes an index from a collection.
 ```js
 // Create a single-field index on the 'email' field
 db.myCollection.createIndex({ email: 1 })
