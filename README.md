@@ -110,13 +110,37 @@ for (var c in col) { print (c) ; }
 
 
 
+## Query in Detail
 
+In MongoDB using the mongosh shell, you can select specific fields or columns from documents returned by the find command by specifying a projection. A projection allows you to control which fields you want to include or exclude in the query results.
 
-
+Here's how you can select specific fields using the find command with a projection in mongosh:
 ```js
+db.collectionName.find(<query>, <projection>)
+
+// collectionName: Replace this with the name of the collection you want to query.
+// <query>: This is the query object that specifies your conditions, if any.
+// <projection>: Use this to specify which fields you want to include or exclude from the results.
+
+// Include 'name' and 'age', exclude 'email' and 'address'
+db.myCollection.find({}, { name: 1, age: 1, email: 0, address: 0 })
 
 ```
 ```js
+
+// Find documents where age is greater than 30
+db.myCollection.find({ age: { $gt: 30 } })
+// Find documents where age is lesser than 30
+db.myCollection.find({ age: { $lt: 30 } })
+
+// Find documents where age is 30 and name is "John"
+db.myCollection.find({ $and: [{ age: 30 }, { name: "John" }] })
+
+// Find documents where age is 30 or name is "Alice"
+db.myCollection.find({ $or: [{ age: 30 }, { name: "Alice" }] })
+
+// Find documents where age is not 30
+db.myCollection.find({ age: { $not: { $eq: 30 } } })
 
 ```
 ```js
