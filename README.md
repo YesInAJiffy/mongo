@@ -12,6 +12,21 @@
 |  Scaling |  Primarily vertical scaling  |   Horizontal scaling (sharding) for distribution across servers  |
 | Use Cases  |  Structured data, complex queries, data integrity is critical  |   Flexible and scalable for unstructured or semi-structured data, less emphasis on data integrity  |
 
+# Non Relational DB Types
+
+| Type    | Examples | 
+| -------- | ------- |
+| Document Stores  | MongoDB, Couchbase, CouchDB   |
+| Key-Value Stores  |   Redis, Amazon DynamoDB, Riak |
+| Column-Family Stores  |  Apache Cassandra, HBase, ScyllaDB  |
+| Graph Databases   |  Neo4j, Amazon Neptune, OrientDB  |
+| Wide-Column Stores  | Apache HBase, Cassandra, Amazon Keyspaces   |
+|  Time-Series Databases |  InfluxDB, TimescaleDB, OpenTSDB |
+| Object Stores  |   Amazon S3, Google Cloud Storage, Azure Blob Storage |
+|  XML Databases |  BaseX, eXist-db  |
+| Multimodel Databases  | ArangoDB, Couchbase Server   |
+
+
 
 ## MongoSH commands
 **help**	Displays help information.\
