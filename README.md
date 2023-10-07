@@ -4,7 +4,7 @@
 # Relational vs Non-Relational DB
 
 | Characterstic    | Relational Data | Non Relational Data
-| -------- | ------- | ------- |
+| :-------- | :------- | :------- |
 | Data Structure  | Tables with rows and columns    | Various formats (JSON, key-value, wide-column, graph, etc.) | 
 | Schema  | Fixed schema    | Flexible or dynamic schema | 
 |  Query Language |  SQL | Database-specific or custom query languages |
@@ -15,7 +15,7 @@
 # Non Relational DB Types
 
 | Type    | Examples | 
-| -------- | ------- |
+| :-------- | :------- |
 | Document Stores  | MongoDB, Couchbase, CouchDB   |
 | Key-Value Stores  |   Redis, Amazon DynamoDB, Riak |
 | Column-Family Stores  |  Apache Cassandra, HBase, ScyllaDB  |
