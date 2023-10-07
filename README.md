@@ -1,4 +1,4 @@
-## Command	Description
+![image](https://github.com/YesInAJiffy/mongo/assets/121309018/8122086a-3c30-4b20-8b41-1c2954c22563)## Command	Description
 **help**	Displays help information.\
 **show dbs**	Lists all available databases.\
 **use <database>**	Switches to the specified database.\
@@ -15,3 +15,25 @@
 **db.collection.getIndexes()**	Lists all indexes for a collection.\
 **db.collection.dropIndex(<indexName>)**	Deletes an index from a collection.\
 **exit**	Exits the mongosh shell.
+
+Schema
+Fixed schema
+Flexible or dynamic schema
+Query Language
+SQL
+Database-specific or custom query languages
+Data Relationships
+Established using foreign keys and joins
+May use references or embedded data, optimized for denormalized structures
+Scaling
+Primarily vertical scaling
+Horizontal scaling (sharding) for distribution across servers
+Use Cases
+Structured data, complex queries, data integrity is critical
+Flexible and scalable for unstructured or semi-structured data, less emphasis on data integrity
+
+
+| Characterstic    | Relational Data | Non Relational Data
+| -------- | ------- | ------- |
+| Data Structure  | Tables with rows and columns    | Various formats (JSON, key-value, wide-column, graph, etc.) | 
+
