@@ -5,7 +5,8 @@
 
 | Characterstic    | Relational Data | Non Relational Data
 | :-------- | :------- | :------- |
-| Data Structure  | Tables with rows and columns    | Various formats (JSON, key-value, wide-column, graph, etc.) | 
+| Data Structure  | Normalized data containing tables with rows and columns    | Various formats (JSON, key-value, wide-column, graph, etc.) NoSQL databases provide a variety of data models such as key-value, document, and graph, which are optimized for performance and scale. |
+| 
 | Schema  | Fixed schema    | Flexible or dynamic schema | 
 |  Query Language |  SQL | Database-specific or custom query languages |
 |  Data Relationships | Established using foreign keys and joins   |   May use references or embedded data, optimized for denormalized structures  |
