@@ -31,16 +31,11 @@
 ## MongoSH commands
 **help**	Displays help information.\
 **show dbs**	Lists all available databases.\
-**use <database>**	Switches to the specified database.\
-**show collections**	Lists all collections in the current database.\
-**db.collection.find(<query>)**	Retrieves documents from a collection based on a query.
+**use <database>**	Switches to the specified database.
 ```js
-// Find all documents in the 'myCollection' collection
-db.myCollection.find()
-
-// Find documents matching specific criteria
-db.myCollection.find({ age: { $gt: 25 } })
-
+// To switch to an existing database, use the use command followed by the name of the database. If the specified database does not exist, MongoDB will create it when you start storing data in it.
+// Creates a DB if the DB is not existing
+use myDB
 ```
 **db.collection.insertOne(<document>)**	Inserts a single document into a collection.
 ```js
@@ -52,6 +47,17 @@ db.myCollection.insertOne({
 ```
 
 **db.collection.insertMany([<documents>])**	Inserts multiple documents into a collection.\
+**show collections**	Lists all collections in the current database.\
+**db.collection.find(<query>)**	Retrieves documents from a collection based on a query.
+```js
+// Find all documents in the 'myCollection' collection
+db.myCollection.find()
+
+// Find documents matching specific criteria
+db.myCollection.find({ age: { $gt: 25 } })
+
+```
+
 **db.collection.updateOne(<filter>, <update>)**	Updates a single document that matches the filter.\
 **db.collection.updateMany(<filter>, <update>)**	Updates multiple documents that match the filter.
 ```js
